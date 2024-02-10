@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/JavaScript" src="logique.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- ceci est le conteneur de toute le web -->
+    <div class="container">
+        <!-- Creation d'une barre de navigation qui va contenir tous les menu-->
+        <header>
+            <nav>
+                <!-- ceci est un conteneur des menu du côté gauche de la barre de navigation -->
+                <ul class="menu-gauche">
+                    <li id="menu">
+                        <i class="fa-solid fa-house"></i>
+                        <a href="#">Accueil</a>
+                    </li>
+                    <li id="menu">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <a href="#">Lieux</a>
+                    </li>
+                </ul>
+                <div class="nom"><h1>Touristique<span>Express</span></h1></div>
+                <ul class="menu-droit">
+                    <li id="menu">
+                        <i class="fa-solid fa-user-tie"></i>
+                        <a href="#">Admin</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Cette section contiendra tous le contenu de la page accuie
+            les textes ainsi que les images -->
+
+        <section id="accueil">
+            <div class="textcont">
+                <h1><span>Decouvrir <br>le monde <br>merveillant </span><br>Avec TouristiqueExpres, svoyagez au-delà de vos rêves !</h1>
+                <p class="description">
+                    TouristiqueExpress est votre porte d'entrée 
+                    vers les merveilles du monde. Plongez dans une 
+                    plateforme immersive et conviviale, où vous 
+                    pouvez facilement découvrir les lieux touristiques 
+                    les plus incroyables. Des descriptions captivantes, 
+                    des avis de voyageurs passionnés et des conseils 
+                    pratiques vous guident vers des expériences uniques. 
+                    Créez votre profil personnalisé pour sauvegarder vos 
+                    destinations préférées, interagir avec une communauté 
+                    de passionnés et recevoir des recommandations sur mesure. 
+                    Des guides complets et des visites virtuelles à 360 
+                    degrés vous transportent au cœur des destinations. 
+                    Préparez-vous à vivre des aventures inoubliables avec TouristiqueExpress.
+                </p>
+            </div>
+            <div class="btn">
+                <a href="" class="btn">Explorer les sites touristiques.</a>
+            </div>
+            <div class="desous">
+                <!-- <div class="footer left"></div> -->
+                <div class="footer right">
+                    <div class="tick"><i class="fa-solid fa-check"></i></div>
+                    <h1>Avec nous, visiter les sites touristiques qui vous fairez rêver !</h1>
+                    <div class="ranking">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+                <div class="imgcont">
+                    <div class="wrapper">
+                        <img src="photo.jpeg" alt="Attraction 1">
+                        <p>
+                            Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. 
+                            Consectetur quo dicta possimus 
+                            <div class="like">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </p>
+                    </div>
+                    <div class="wrapper">
+                        <img src="5e.jpg" alt="Attraction 2">
+                        <p>
+                            Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. 
+                            Consectetur quo dicta possimus 
+                            <div class="like">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </p>
+                    </div>
+                    <div class="wrapper">
+                        <img src="dsc_0966qq.jpg" alt="Attraction 3">
+                        <p>
+                            Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. 
+                            Consectetur quo dicta possimus
+                            <div class="like">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </p>    
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="lieux">
+            <h2>Liste des lieux touristiques</h2>
+            <div class="lieu">
+                <img src="lieu1.jpg" alt="Lieu 1">
+                <p>Description du lieu 1 <a href="#" class="details-link">Détails</a></p>
+            </div>
+            <div class="lieu">
+                <img src="lieu2.jpg" alt="Lieu 2">
+                <p>Description du lieu 2 <a href="#" class="details-link">Détails</a></p>
+            </div>
+            <!-- ... -->
+        </section>
+        
+        <div id="modal-phone" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Contact</h3>
+                <p>Téléphone mobile: XXX-XXX-XXX</p>
+                <p>Téléphone bureau: XXX-XXX-XXX</p>
+                <p>WhatsApp: XXX-XXX-XXX</p>
+            </div>
+        </div>
+        
+        <div id="modal-email" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Contact</h3>
+                <form>
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" required></textarea>
+                <input type="submit" value="Envoyer">
+                </form>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="contact-icons">
+                <a href="#" class="phone-icon"><img src="phone-icon.png" alt="Phone"></a>
+                <a href="#" class="email-icon"><img src="email-icon.png" alt="Email"></a>
+                <a href="#" class="facebook-icon"><img src="facebook-icon.png" alt="Facebook"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
